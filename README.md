@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Supercar AI Sales Assistant
+
+A modern web application that provides an interactive chat interface with an AI sales assistant for SuperCar dealerships. Built with Next.js and FastAPI.
+
+## Features
+
+- 🤖 Real-time AI chat interface with streaming responses
+- 🛠️ Integrated tools for:
+  - Weather information
+  - Dealership locations
+  - Appointment scheduling
+- 💬 Server-Sent Events (SSE) for real-time communication
+- 🎨 Modern UI with responsive design
+- ⚡ Fast and efficient message handling
+
+## Tech Stack
+
+- **Frontend**:
+  - Next.js 14
+  - TypeScript
+  - Tailwind CSS
+  - Zustand (State Management)
+  - Shadcn UI Components
+
+- **Backend**:
+  - FastAPI
+  - SSE (Server-Sent Events)
+  - Docker integration
 
 ## Getting Started
 
-First, run the development server:
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. **Run Development Server**
+   ```bash
+   npm run dev
+   ```
+
+3. **Access the Application**
+   Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Project Structure
+
+```
+frontend/
+├── src/
+│   ├── app/              # Next.js app router
+│   ├── components/       # React components
+│   │   ├── chat/        # Chat-related components
+│   │   ├── layout/      # Layout components
+│   │   ├── tool-outputs/# Tool-specific UI components
+│   │   └── ui/          # Reusable UI components
+│   ├── hooks/           # Custom React hooks
+│   ├── store/           # Zustand state management
+│   └── types/           # TypeScript type definitions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features in Detail
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Chat Interface
+- Real-time message streaming
+- Support for various tool outputs
+- Auto-scrolling message list
+- Responsive textarea with auto-resize
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Tool Outputs
+- Weather information display
+- Dealership address visualization
+- Appointment scheduling interface
+- Available time slots selection
 
-## Learn More
+### UI/UX
+- Clean and modern design
+- Smooth animations
+- Mobile-responsive layout
+- Loading states and error handling
 
-To learn more about Next.js, take a look at the following resources:
+## Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Use `npm run lint` to check for linting issues
+- Use `npm run build` to create a production build
+- Use `npm run start` to run the production build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
